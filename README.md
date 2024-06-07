@@ -22,6 +22,8 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+# REST API with NEST JS
+
 ## Description
 
 This repository consists of the implementation of REST API using NEST.js and Prisma as ORM for Postgres SQL. There are two resources in this project:

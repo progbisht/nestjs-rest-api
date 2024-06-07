@@ -24,7 +24,10 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This repository consists of the implementation of REST API using NEST.js and Prisma as ORM for Postgres SQL. There are two resources in this project:
+- The first one is User in which CRUD operations are performed with the help of DTOs
+- The second resource is employee in which the CRUD operations are performed with the help of database services along with Prisma
+
 
 ## Installation
 
@@ -45,18 +48,6 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
 
 ## Support
 

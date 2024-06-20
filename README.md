@@ -7,39 +7,36 @@
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+ 
 
 # REST API with NEST JS
+In this minor project, I have implemented REST API with the help of NestJS which is a Node.js framework for building scalable web applications with Typescript. 
+
+## Objective
+The objective of this minor project is to understand the NestJS framework, working with MVC and typescript, how to work with DTOs, and how to integrate ORM and handle data while working with real-world applications.
 
 ## Description
-
-This repository consists of the implementation of REST API using NEST.js and Prisma as ORM for Postgres SQL. There are two resources in this project:
+REST API using NEST.js and Prisma as ORM for Postgres SQL. There are two resources in this project:
 - The first one is User in which CRUD operations are performed with the help of DTOs
 - The second resource is employee in which the CRUD operations are performed with the help of database services along with Prisma
 
 
-## Installation
+## Installation and Usage
 
-```bash
+- Clone the repo
+```
+$ git clone git@github.com:progbisht/nestjs-rest-api.git
+```
+
+- Open the project with any modern code editor and install the dependencies.
+```
 $ npm install
 ```
 
-## Running the app
-
-```bash
+- Run the server
+```
 # development
 $ npm run start
 
@@ -50,10 +47,45 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+- Test out the endpoints using tools like Postman or Thunderclient.
+
+
+## Endpoints
+
+POST    /employee
+- Creates a new employee
+- Accepts data strictly in format
+  ```
+   {
+    "name": "Andres Hejlsberg",
+    "email": "andres@gmail.com",
+    "role": "Admin"
+  }
+  ```
+  
+GET     /employee
+- Fetches all employee
+  
+GET     /employee/:id
+- Fetch a single employee with matching ID
+  
+PATCH   /employee/:id
+- Update an existing user with a matching ID
+- Accepts data in format
+  ```
+  {
+    "name": "Andres Hejlsberg",
+    "email": "andres@gmail.com",
+    "role": "Admin"
+  }
+  ```
+  
+DELETE  /employee/:id
+- Delete an existing employee with a matching ID
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Nest is an MIT-licensed open-source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
